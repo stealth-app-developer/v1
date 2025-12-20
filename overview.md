@@ -29,3 +29,5 @@ Progress update:
 - t2: in_progress
 - t3: pending
 - t4: pending
+
+Additional note: t3 exploration in progress, focusing on *.config.* patterns
