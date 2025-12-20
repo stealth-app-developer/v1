@@ -17,3 +17,9 @@ Architecture highlights (tentative, based on standard patterns):
 - Build: conventional tooling (webpack/vite/tsconfig) with scripts in package.json
 
 Next steps: clone/fetch repo, inspect actual modules, and draft a precise diagram.
+
+Progress log:
+- t1: planning started
+- t2: codebase exploration planned
+- t3: config pattern identification planned
+- t4: architecture plan drafting scheduled
