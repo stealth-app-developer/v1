@@ -77,3 +77,31 @@ export interface ChildLoggerOptions {
   context?: string;
   metadata?: Record<string, unknown>;
 }
+
+/**
+ * Application error with additional context
+ */
+export interface AppErrorOptions {
+  /** Error code for programmatic handling */
+  code?: string;
+  /** HTTP status code if applicable */
+  statusCode?: number;
+  /** Additional context for debugging */
+  context?: Record<string, unknown>;
+  /** Original error that caused this error */
+  cause?: Error;
+  /** Whether this error is operational (expected) vs programmer error */
+  isOperational?: boolean;
+}
+
+/**
+ * Global error handler configuration
+ */
+export interface ErrorHandlerConfig {
+  /** Whether to log the full stack trace */
+  logStackTrace: boolean;
+  /** Whether to exit on unhandled errors */
+  exitOnUncaught: boolean;
+  /** Custom error hook for notifications */
+  onError?: (error: Error, context: Record<string, unknown>) => void;
+}
